@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    color: #04C4D9;
+}
+
+.flex-header {
+    display: flex;
+    flex-direction: row;
+    background: url('/assets/img/Cover1.svg');
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+}
+
+.logo1 img {
+    height: 20px;
+}
+
+.logo1 {
+    display: flex;
+}
+
+.respmenu {
+    display: flex;
+}
+
+
+
+/* Menu hamburguesa */
+
+ol, ul{
+    list-style: none;
+}
+
+.respmenu a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+    max-width: 200px;
+    background:white;
+    opacity: .8;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+}
+
+.respmenu input[type="checkbox"],
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.respmenu .fa-bars,
+.respmenu .fa-times {
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.respmenu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.respmenu {
+    color: white;
+    position: relative;
+    min-height: 20px;
+}
+
+.respmenu nav {
+    display: none;
+}
+
+.respmenu input:checked~nav {
+    display: block;
+}
+
+.respmenu input:checked~.fa-bars {
+    display: none;
+}
+
+.respmenu input:not(:checked)~.fa-times {
+    display: none;
+}
+
+
+
+/* final menu hambuerguesa */
+
+/* section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+section h1 {
+    font-size: 44px;
+} */
+
+/* .conte {
+    text-align: center;
+}
+
+.conte p {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.conte a {
+    color: white;
+    text-decoration: none;
+    background: #04C4D9;
+    padding: 4px 20px;
+    border-radius: 30px;
+    font-size: 10px;
+    margin: 10px;
+} */
