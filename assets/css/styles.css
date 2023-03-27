@@ -69,13 +69,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Dancing Script', ;
     background-color: #FFF9C4;
 }
 
 
 .cover1 {
     background-color: #FFF9C4;
+    box-sizing: border-box;
     color: black;
     font-weight: bold;
     height: 450px;
@@ -83,12 +84,119 @@
 
 img {
     width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 20%;
+
 }
 
 /*hero*/
 
-h1, h4, h5 {
+h1,
+h2,
+h4,
+h5 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
+    background: none;
 }
+
+p {
+    background: none;
+    font-family: 'Dancing Script', ;
+}
+
+.carousel-caption {
+    background: none;
+    color: black;
+}
+
+/* Section historia de amor */
+
+section {
+    padding: 5px;
+    display: flex;
+    align-items: center center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    border: solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* save the date */
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container h1{
+    position: absolute;
+    text-align: center;
+   
+}
+
+.flex-container p{
+    position: absolute;
+    text-align: end;
+}
+
+
+
+
+/* .contenedor {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+.flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+} */
+
+/* .contador {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+} */
+
+/* .contador div {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+} */
+
+
+
+
+
+/* Direcciones */
+
 
