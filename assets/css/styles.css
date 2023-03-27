@@ -1,25 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 
+
+
+/* Color Theme Swatches in Hex */
+.gr\\u00F8n-1-hex {
+    color: #94FFFF;
+}
+
+.gr\\u00F8n-2-hex {
+    color: #87E8B5;
+}
+
+.gr\\u00F8n-3-hex {
+    color: #A7FFA1;
+}
+
+.gr\\u00F8n-4-hex {
+    color: #D0F575;
+}
+
+.gr\\u00F8n-5-hex {
+    color: #FFF9C4;
+}
+
+/* Color Theme Swatches in RGBA */
+.gr\\u00F8n-1-rgba {
+    color: rgba(148, 255, 255, 1);
+}
+
+.gr\\u00F8n-2-rgba {
+    color: rgba(135, 232, 181, 1);
+}
+
+.gr\\u00F8n-3-rgba {
+    color: rgba(167, 255, 161, 1);
+}
+
+.gr\\u00F8n-4-rgba {
+    color: rgba(208, 245, 117, 1);
+}
+
+.gr\\u00F8n-5-rgba {
+    color: rgba(255, 249, 196, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.gr\\u00F8n-1-hsla {
+    color: hsla(180, 100, 79, 1);
+}
+
+.gr\\u00F8n-2-hsla {
+    color: hsla(148, 67, 71, 1);
+}
+
+.gr\\u00F8n-3-hsla {
+    color: hsla(116, 100, 81, 1);
+}
+
+.gr\\u00F8n-4-hsla {
+    color: hsla(77, 86, 70, 1);
+}
+
+.gr\\u00F8n-5-hsla {
+    color: hsla(53, 100, 88, 1);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Exo', sans-serif;
+    background-color: #FFF9C4;
 }
 
 
-header{
+.cover1 {
+    background-color: #FFF9C4;
     color: black;
     font-weight: bold;
-    background: url('/assets/img/Cover1.svg');
     height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-img{
+img {
     width: 100%;
 }
 
+/*hero*/
+
+h1, h4, h5 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
 
