@@ -67,16 +67,10 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
     font-family: 'Dancing Script';
     background-color: #EAF3ED;
-}
-
-.col {
-    border-color: #D0F575;
-    border: 5px;
-
 }
 
 .cover1 {
@@ -99,6 +93,24 @@ img {
 
 /*hero*/
 
+.carousel-item img{
+    border-radius: 10px;
+
+}
+
+.heros {
+    padding: 0;
+}
+
+
+.carousel-inner{
+    display: contents;
+    background-repeat: no-repeat;
+    padding: 40px;
+    height: auto;
+    width: 1000px;
+}
+
 h1,
 h2,
 h4,
@@ -112,6 +124,7 @@ h5 {
 p {
     background: none;
     font-family: 'Dancing Script' normal;
+    text-align: center;
 }
 
 .carousel-caption {
@@ -121,10 +134,13 @@ p {
 
 /* Section historia de amor */
 
-
+main{
+    padding: 20px;
+    margin: 0px;
+}
 
 .card {
-    border: solid black;
+    border: none;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -140,11 +156,17 @@ p {
 
 .card-animation-cont .card {
     position: relative;
-    height: 300px;
-    width: 270px;
+    height: 500px;
+    width: 470px;
     overflow: hidden;
     border-radius: 10px;
 }
+
+.hide-info {
+    background: none;
+    color: #781A40;
+}
+
 
 /* Shadow over images */
 .card-animation-cont .card::after {
@@ -191,10 +213,11 @@ p {
 }
 
 .card-animation-cont .card .info .sub-title {
-    font-size: 0.8rem;
+    font-size: 20px;
     opacity: 0.7;
     margin-top: 5px;
     font-weight: 500;
+    text-align: center;
 }
 
 .card-animation-cont .card .info hr {
@@ -249,10 +272,6 @@ p {
 }
 
 
-
-
-
-
 /* save the date */
 
 .contador {
@@ -261,6 +280,7 @@ p {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 80vh;
+    width: 980px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -278,11 +298,19 @@ p {
     padding: 3px 10px;
     border: PowderBlue 5px solid;
     border-radius: 20px;
-    +
 }
 
 
 
+
+@media only screen and (max-width: 830px) {
+  /* For mobile phones: */
+.container-fluid {
+    background: none;
+    display: flex;
+    flex-direction: row;
+}
+}
 
 
 /* .contenedor {
@@ -310,15 +338,7 @@ p {
     text-align: center;
     line-height: 75px;
     font-size: 30px;
-} */
-
-/* .contador {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    flex-wrap: wrap;
-} */
-
+}  */
 
 
 
