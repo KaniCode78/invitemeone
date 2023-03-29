@@ -1,135 +1,325 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 
+
+
+/* Color Theme Swatches in Hex */
+.gr\\u00F8n-1-hex {
+    color: #94FFFF;
+}
+
+.gr\\u00F8n-2-hex {
+    color: #87E8B5;
+}
+
+.gr\\u00F8n-3-hex {
+    color: #A7FFA1;
+}
+
+.gr\\u00F8n-4-hex {
+    color: #D0F575;
+}
+
+.gr\\u00F8n-5-hex {
+    color: #FFF9C4;
+}
+
+/* Color Theme Swatches in RGBA */
+.gr\\u00F8n-1-rgba {
+    color: rgba(148, 255, 255, 1);
+}
+
+.gr\\u00F8n-2-rgba {
+    color: rgba(135, 232, 181, 1);
+}
+
+.gr\\u00F8n-3-rgba {
+    color: rgba(167, 255, 161, 1);
+}
+
+.gr\\u00F8n-4-rgba {
+    color: rgba(208, 245, 117, 1);
+}
+
+.gr\\u00F8n-5-rgba {
+    color: rgba(255, 249, 196, 1);
+}
+
+/* Color Theme Swatches in HSLA */
+.gr\\u00F8n-1-hsla {
+    color: hsla(180, 100, 79, 1);
+}
+
+.gr\\u00F8n-2-hsla {
+    color: hsla(148, 67, 71, 1);
+}
+
+.gr\\u00F8n-3-hsla {
+    color: hsla(116, 100, 81, 1);
+}
+
+.gr\\u00F8n-4-hsla {
+    color: hsla(77, 86, 70, 1);
+}
+
+.gr\\u00F8n-5-hsla {
+    color: hsla(53, 100, 88, 1);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Exo', sans-serif;
+    font-family: 'Dancing Script';
+    background-color: #EAF3ED;
 }
 
-body {
-    color: #04C4D9;
+.col {
+    border-color: #D0F575;
+    border: 5px;
+
 }
 
-.flex-header {
-    display: flex;
-    flex-direction: row;
-    background: url('/assets/img/Cover1.svg');
+.cover1 {
+    background-color: #FFF9C4;
+    box-sizing: border-box;
+    color: black;
+    font-weight: bold;
     height: 450px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: space-between;
 }
 
-.logo1 img {
-    height: 20px;
+img {
+    width: 100%;
+    height: auto;
 }
 
-.logo1 {
+.logo {
+    width: 20%;
+
+}
+
+/*hero*/
+
+h1,
+h2,
+h4,
+h5 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background: none;
+    color: #781A40;
+}
+
+p {
+    background: none;
+    font-family: 'Dancing Script' normal;
+}
+
+.carousel-caption {
+    background: none;
+    color: #781A40;
+}
+
+/* Section historia de amor */
+
+
+
+.card {
+    border: solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card-animation-cont {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
 
-.respmenu {
-    display: flex;
+.card-animation-cont .card {
+    position: relative;
+    height: 300px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-
-
-/* Menu hamburguesa */
-
-ol, ul{
-    list-style: none;
+/* Shadow over images */
+.card-animation-cont .card::after {
+    content: "";
+    position: absolute;
+    height: 90%;
+    inset: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.respmenu a {
-    color: inherit;
-    text-decoration: none;
-    display: flex;
-    padding: 10px 20px;
-    border-bottom: 2px solid black;
-    max-width: 200px;
-    background:white;
-    opacity: .8;
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
+.card-animation-cont .card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transform-origin: bottom;
+    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
-.respmenu input[type="checkbox"],
-.respmenu .fa-bars,
-.respmenu .fa-times {
+.card-animation-cont .card .info {
     position: absolute;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-}
-
-.respmenu .fa-bars,
-.respmenu .fa-times {
-    font-size: 20px;
-    pointer-events: none;
-}
-
-.respmenu input[type="checkbox"] {
-    opacity: 0;
-}
-
-.respmenu {
-    color: white;
-    position: relative;
-    min-height: 20px;
-}
-
-.respmenu nav {
-    display: none;
-}
-
-.respmenu input:checked~nav {
-    display: block;
-}
-
-.respmenu input:checked~.fa-bars {
-    display: none;
-}
-
-.respmenu input:not(:checked)~.fa-times {
-    display: none;
-}
-
-
-
-/* final menu hambuerguesa */
-
-/* section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 0;
-}
-
-section h1 {
-    font-size: 44px;
-} */
-
-/* .conte {
-    text-align: center;
-}
-
-.conte p {
-    font-size: 60px;
-    font-weight: bold;
-    margin: 1em 0;
-}
-
-.conte a {
-    color: white;
+    bottom: 0;
+    background-color: rgb(225, 225, 225);
+    z-index: 2;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
     text-decoration: none;
-    background: #04C4D9;
-    padding: 4px 20px;
-    border-radius: 30px;
-    font-size: 10px;
-    margin: 10px;
+    color: rgb(20, 20, 20);
+    border-radius: 10px;
+    transform: translateY(68%);
+    /* Change this property */
+    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.card-animation-cont .card .info strong {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.card-animation-cont .card .info .sub-title {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.card-animation-cont .card .info hr {
+    margin: 15px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.card-animation-cont .card .hide-info {
+    transform: translateY(25px);
+    opacity: 0;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.card-animation-cont .card .hide-info a {
+    position: relative;
+    top: 3px;
+    color: #766df4;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card-animation-cont .card .hide-info a:hover {
+    color: #5549f1;
+}
+
+.card-animation-cont .card:hover>.info {
+    transform: translateY(0);
+}
+
+.card-animation-cont .card:hover>img {
+    transform: scale(1.2);
+}
+
+.card-animation-cont .card:hover::after {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.card-animation-cont .card:hover .hide-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 830px) {
+    .card-animation-cont {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* save the date */
+
+.contador {
+    background-image: url(/assets/img/boat-6363077_1280.jpg);
+    border-radius: 5%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador div {
+    place-items: center;
+    padding: 10px;
+    background: none;
+    font-size: xx-large;
+}
+
+.contador div .col {
+    padding: 3px 10px;
+    border: PowderBlue 5px solid;
+    border-radius: 20px;
+    +
+}
+
+
+
+
+
+/* .contenedor {
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 } */
+
+/* .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.flex-container > div {
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+} */
+
+/* .contador {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+} */
+
+
+
+
+/* Direcciones */
