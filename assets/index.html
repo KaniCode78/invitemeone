@@ -76,8 +76,43 @@
 
     <!-- Historia de amor -->
     <main>
-        <section>
-            <div>
+        <section id="cartas">
+
+            <div class="card-animation-cont">
+                <!-- Duplicate the following div to add cards -->
+                <div class="card">
+                    <img src="https://picsum.photos/id/556/1080/1200" alt="" />
+                    <div class="info">
+                        <strong>Lorem Ipsum</strong>
+                        <span class="sub-title">Dolor sit amet</span>
+                        <hr />
+                        <div class="hide-info">
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+                                <a href="#">Learn More</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://picsum.photos/id/553/1080/1200" alt="" />
+                    <div class="info">
+                        <strong>Lorem Ipsum</strong>
+                        <span class="sub-title">Dolor sit amet</span>
+                        <hr />
+                        <div class="hide-info">
+                            <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                                commodo nulla mauris, eget tincidunt felis bibendum sit amet.
+                                <a href="#">Learn More</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div>
                 <h1>Historia de Amor</h1>
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
@@ -128,70 +163,31 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </main>
 
     <!-- Contador -->
     <div>
-        <section class="flex-container">
-            <div class="d-flex flex-row mb-2">
-                <img src="/assets/img/boat-6363077_1280.jpg" alt="bote">
-                <div class="carousel-caption d-none d-md-block">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Dias</th>
-                                <th scope="col">Horas</th>
-                                <th scope="col">Minutos</th>
-                                <th scope="col">Segundos</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" id="days">365</th>
-                                <td id="hours">20</td>
-                                <td id="minutes">15</td>
-                                <td Id="seconds">12</td>
-                            </tr>
-                            <tr>
-
-                        </tbody>
-                    </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <h2>Save the Date</h2>
-                    <p id="days">273</p>
-                    <p>Dias
-                    <p>
-                    <p id="hours">15</p>
-                    <p>Horas
-                    <P>
-                    <p id="minutes">25</p>
-                    <p>Minutos
-                    <p>
-                    <p id="seconds">45</p>
-                    <span>Segundos</span>
+        <section id="contador">
+            <div class="container-fluid text-center contador">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="titulo">Dias</h1>
+                        <p class="parrafo" id="days">365</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="titulo">Horas</h1>
+                        <p class="parrafo" id="hours">24</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="titulo">Minutos</h1>
+                        <p class="parrafo" id="minutes">60</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="titulo">Segundos</h1>
+                        <p class="parrafo" id="seconds">60</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -201,7 +197,7 @@
         <div class="d-flex flex-row mb-2">
             <div class="p-2">
                 <div class="card">
-                    <img src="/assets/img/iglesia1.jpeg" class="card-img-top" alt="...">
+                    <img src="/assets/img/iglesia1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">CEREMONIA RELIGIOSA</h5>
                         <p class="card-text">
@@ -216,7 +212,7 @@
             </div>
             <div class="p-2">
                 <div class="card">
-                    <img src="/assets/img/hacienda1.jpeg" class="card-img-top" alt="...">
+                    <img src="/assets/img/hacienda1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Recepción</h5>
                         <p class="card-text">26 de Noviembre, 2022
@@ -230,6 +226,22 @@
             </div>
         </div>
     </div>
+
+    <section id="contador">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 contador">
+                    <p>dias</p>
+                    <p>horas</p>
+                    <p>
+                        minutos
+                    </p>
+                    <p>segundos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
