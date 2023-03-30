@@ -93,7 +93,7 @@ img {
 
 /*hero*/
 
-.carousel-item img{
+.carousel-item img {
     border-radius: 10px;
 
 }
@@ -103,7 +103,7 @@ img {
 }
 
 
-.carousel-inner{
+.carousel-inner {
     display: contents;
     background-repeat: no-repeat;
     padding: 40px;
@@ -134,7 +134,7 @@ p {
 
 /* Section historia de amor */
 
-main{
+main {
     padding: 20px;
     margin: 0px;
 }
@@ -304,17 +304,18 @@ main{
 
 
 @media only screen and (max-width: 830px) {
-  /* For mobile phones: */
-.container-fluid {
-    background: none;
-    display: flex;
-    flex-direction: row;
-}
+
+    /* For mobile phones: */
+    .container-fluid {
+        background: none;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*  Direcciones */
 
-.adress{
+.adress {
     padding: 0%;
     margin: 10px;
     background-color: #EAF3ED;
@@ -322,9 +323,20 @@ main{
 
 /*Mesa de regalos*/
 
-.container-regalos{
+.container {
     align-items: center;
     text-align: center;
     color: #781A40;
 }
 
+.container img {
+    display: flex;
+    width: auto;
+    height: 120px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* confirmaciones */
