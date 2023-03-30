@@ -312,34 +312,19 @@ main{
 }
 }
 
+/*  Direcciones */
 
-/* .contenedor {
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
-
-/* .flex-container{
-    display: flex;
-    flex-wrap: nowrap;
-
+.adress{
+    padding: 0%;
+    margin: 10px;
+    background-color: #EAF3ED;
 }
 
-.flex-container > div {
-    width: 100px;
-    margin: 10px;
+/*Mesa de regalos*/
+
+.container-regalos{
+    align-items: center;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-}  */
+    color: #781A40;
+}
 
-
-
-/* Direcciones */
